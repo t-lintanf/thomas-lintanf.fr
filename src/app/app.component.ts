@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'thomas-lintanf.fr';
+  isNavOpen = false;
 
-  ngOnInit(): void {
-    console.debug('test');
+  onClickMenu(): void {
+    this.isNavOpen = !this.isNavOpen;
+    console.debug('Click menu, isNavOpen', this.isNavOpen);
   }
 }

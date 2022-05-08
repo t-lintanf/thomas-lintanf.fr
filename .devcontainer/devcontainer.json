@@ -23,7 +23,8 @@
 		"johnpapa.Angular2",
 		"PKief.material-icon-theme",
 		"VisualStudioExptTeam.vscodeintellicode",
-		"firefox-devtools.vscode-firefox-debug"
+		"firefox-devtools.vscode-firefox-debug",
+		"syler.sass-indented"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

@@ -3,11 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "thomas-lintanf.fr": {
+    "thomas-lintanf-fr": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "scss"
         },
         "@schematics/angular:application": {
           "strict": true
@@ -20,18 +20,19 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/thomas-lintanf.fr",
+            "outputPath": "dist/thomas-lintanf-fr",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "sass",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/custom-theme.scss",
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -72,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "thomas-lintanf.fr:build:production"
+              "browserTarget": "thomas-lintanf-fr:build:production"
             },
             "development": {
-              "browserTarget": "thomas-lintanf.fr:build:development"
+              "browserTarget": "thomas-lintanf-fr:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "thomas-lintanf.fr:build"
+            "browserTarget": "thomas-lintanf-fr:build"
           }
         },
         "test": {
@@ -99,7 +100,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -107,5 +108,5 @@
       }
     }
   },
-  "defaultProject": "thomas-lintanf.fr"
+  "defaultProject": "thomas-lintanf-fr"
 }
