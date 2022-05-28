@@ -1,0 +1,37 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #9F1919;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: xx-large;
+    margin: 1% 3%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 1% 3%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    text-decoration: underline 0.1rem rgba(255, 255, 255, 0);
+    text-underline-offset: 1rem;
+    transition: text-decoration-color 200ms, text-underline-offset 200ms;
+}
+
+a:hover,
+.active {
+    text-decoration-color: rgba(255, 255, 255, 1);
+    text-underline-offset: 0.6rem;
+}
