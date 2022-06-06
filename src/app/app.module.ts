@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { ArticlePreviewLargeComponent } from './components/article-preview-large/article-preview-large.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
     ProjectsComponent,
     ArticlesComponent,
     NotFoundComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ArticlePreviewLargeComponent
   ],
   imports: [
     AppRoutingModule,
