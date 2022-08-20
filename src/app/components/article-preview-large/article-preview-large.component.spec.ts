@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AppModule } from 'src/app/app.module';
 
 import { ArticlePreviewLargeComponent } from './article-preview-large.component';
 
@@ -8,9 +9,10 @@ describe('ArticlePreviewLargeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ArticlePreviewLargeComponent ]
+      imports: [AppModule],
+      declarations: [ArticlePreviewLargeComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ArticlePreviewLargeComponent);
     component = fixture.componentInstance;
